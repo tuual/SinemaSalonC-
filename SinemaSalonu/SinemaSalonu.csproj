@@ -117,6 +117,12 @@
     <Compile Include="frmSeansEkle.Designer.cs">
       <DependentUpon>frmSeansEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSeansGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeansGuncelle.Designer.cs">
+      <DependentUpon>frmSeansGuncelle.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSeanslar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeansEkle.resx">
       <DependentUpon>frmSeansEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeansGuncelle.resx">
+      <DependentUpon>frmSeansGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeanslar.resx">
       <DependentUpon>frmSeanslar.cs</DependentUpon>
