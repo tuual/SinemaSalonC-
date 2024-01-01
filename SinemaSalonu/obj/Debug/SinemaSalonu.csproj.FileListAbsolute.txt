@@ -43,3 +43,4 @@ C:\Users\OEM\source\repos\SinemaSalonu\SinemaSalonu\obj\Debug\SinemaSalonu.pdb
 C:\Users\OEM\source\repos\SinemaSalonu\SinemaSalonu\obj\Debug\SinemaSalonu.frmMenuler.resources
 C:\Users\OEM\source\repos\SinemaSalonu\SinemaSalonu\obj\Debug\SinemaSalonu.frmSeansEkle.resources
 C:\Users\OEM\source\repos\SinemaSalonu\SinemaSalonu\obj\Debug\SinemaSalonu.frmSeanslar.resources
+C:\Users\OEM\source\repos\SinemaSalonu\SinemaSalonu\obj\Debug\SinemaSalonu.frmSeansGuncelle.resources

@@ -57,14 +57,28 @@ namespace SinemaSalonu
 
         private void verisilme(DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            try
             {
-                DataGridViewRow selectRow = dataGridView1.Rows[e.RowIndex];
-                id = Convert.ToInt32(selectRow.Cells["ID"].Value);
-                String query = "Delete From uyeler WHERE ID=" + id;
-               
+                if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+                {
 
+                    DataGridViewRow selectRow = dataGridView1.Rows[e.RowIndex];
+                    id = Convert.ToInt32(selectRow.Cells["ID"].Value);
+                    String query = "Delete From uyeler WHERE ID=" + id;
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Veri Bulunamadı");
+                }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,6 +89,25 @@ namespace SinemaSalonu
             cmd.ExecuteNonQuery();
             MessageBox.Show("Silme İşlemi Başarılı");
             con.Close();
+            tableUpdate();
+            id = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmSeansGuncelle seansGuncelle = new frmSeansGuncelle(this, id);
+            if (id != null)
+            {
+                seansGuncelle.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("ok");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             tableUpdate();
         }
     }

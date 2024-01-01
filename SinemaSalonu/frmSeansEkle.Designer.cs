@@ -176,7 +176,7 @@
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(53, 17);
             this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "15.00";
+            this.checkBox8.Text = "17.00";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
